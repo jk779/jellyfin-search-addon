@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Search Jellyfin</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><div><span class="eyebrow">YOUR LIBRARY, ONE SEARCH AWAY</span><h1>Search Jellyfin</h1></div><button id="settings" class="quiet" type="button">Settings</button></header>
+<main>
+<p class="muted">Choose the words that matter. Your results open in a new Jellyfin tab.</p>
+<section aria-labelledby="words-title"><div class="row"><h2 id="words-title">Selected words</h2><div><button id="all" class="quiet" type="button">All</button><button id="none" class="quiet" type="button">None</button></div></div><div id="words" class="words"></div><p id="empty" class="muted" hidden>Select text on a page and right-click → Search in Jellyfin. Or type a search below.</p></section>
+<form id="search-form"><label for="query">Search preview</label><textarea id="query" rows="3" placeholder="Names, title, keywords…" required></textarea><p class="muted small">You can also edit this text directly.</p><p id="error" class="error" role="alert"></p><button id="submit" class="primary" type="submit" disabled>Search in new tab ↗</button></form>
+<footer id="destination"></footer>
+</main><script type="module" src="search.js"></script>
+</body></html>
